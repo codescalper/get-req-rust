@@ -7,4 +7,9 @@ edition = "2021"
 
 [dependencies]
 reqwest = { version = "0.11.22", features = ["blocking", "json"] }
+#The reqwest crate provides a convenient, higher-level HTTP Client.
+# https://docs.rs/reqwest/latest/reqwest/
 error-chain = "0.12.4"
+
+#error-chain makes it easy to take full advantage of Rust's powerful error handling features without the overhead of maintaining boilerplate error types and conversions. It implements an opinionated strategy for defining your own error types, as well as conversions from others' error types.
+# https://docs.rs/error-chain/latest/error_chain/
