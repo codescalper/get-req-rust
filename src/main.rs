@@ -9,6 +9,7 @@ error_chain! {
 }
 
 fn main() -> Result<()> {
+    // * Blocking get is used to handle synchronous get request
     let mut res = reqwest::blocking::get("https://dummyjson.com/products/1")?;
     let mut body = String::new();
     res.read_to_string(&mut body)?;
